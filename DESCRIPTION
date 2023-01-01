@@ -1,0 +1,22 @@
+Package: tesseractgt
+Type: Package
+Title: Generate Ground Truth Data for Tesseract
+Version: 0.0.1
+Authors@R: 
+    person("Andrés", "Cruz", , "andres.cruz@utexas.edu", role = c("aut", "cre"))
+Description: A package for generating "ground truth" data for retraining and
+    fine-tuning Tesseract's neural network for optical character recognition (OCR).
+Encoding: UTF-8
+LazyData: true
+License: MIT + file LICENSE
+Imports:
+    miniUI,
+    png,
+    shiny,
+    stringr,
+    tiff
+Suggests:
+    tesseract
+RoxygenNote: 7.2.3
+URL: https://github.com/arcruz0/tesseractgt
+BugReports: https://github.com/arcruz0/tesseractgt/issues
