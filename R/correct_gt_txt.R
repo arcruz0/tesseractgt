@@ -39,15 +39,6 @@ correct_gt_txt <- function(){
                          choices = c(folders, ""), selected = "")
     })
 
-    r_max_number <- shiny::reactive({
-      shiny::req(input$folder)
-      list.files(input$folder) |>
-        stringr::str_extract("\\d+") |>
-        as.integer() |>
-        max(na.rm = T) |>
-        as.integer()
-    })
-
     r_prefix <- shiny::reactive({
       shiny::req(input$folder)
       prefix <- list.files(input$folder) |>
