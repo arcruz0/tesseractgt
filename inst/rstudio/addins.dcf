@@ -1,0 +1,5 @@
+Name: Correct Tesseract ground truth files
+Description: Correct "ground truth" .gt.txt files in a folder.
+Binding: correct_gt_txt
+Interactive: false
+
