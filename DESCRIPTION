@@ -1,7 +1,7 @@
 Package: tesseractgt
 Type: Package
 Title: Generate Ground Truth Data for Tesseract
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person("Andrés", "Cruz", , "andres.cruz@utexas.edu", role = c("aut", "cre"))
 Description: An R package for generating "ground truth" data to retrain or

@@ -1,7 +1,7 @@
 `tesseractgt`: Generate Ground Truth Data for Tesseract
 ================
 
-Early release (v0.0.1). More information soon!
+In an early stage (v0.0.2). Check out the [blog post with a fully developed example](https://arcruz0.github.io/posts/finetuning-tess/index.html) and the [package documentation](https://arcruz0.github.io/tesseractgt/index.html).
 
 ## Installation
 
