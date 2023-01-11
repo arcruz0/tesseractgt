@@ -5,6 +5,8 @@
 correct_gt_txt <- function(){
   ui <- miniUI::miniPage(
 
+    shinyjs::useShinyjs(),
+
     miniUI::gadgetTitleBar("Tesseract training labeler"),
 
     miniUI::miniContentPanel(
@@ -124,6 +126,19 @@ correct_gt_txt <- function(){
         stop("Unknown image format.")
       }
 
+    })
+
+    shiny::observe({
+      shiny::req(input$text)
+
+      shinyjs::runjs(
+        stringr::str_c(
+          "$('textarea').attr({",
+          "spellcheck: 'false', autocapitalize: 'off',",
+          "autocomplete: 'off', autocorrect: 'off'",
+          "});"
+        )
+      )
     })
 
     shiny::observeEvent(input$update, {
