@@ -33,7 +33,25 @@ create_gt_txt <- function(folder, extension, engine = NULL, verbose = FALSE){
   # Create corresponding .gt.txt file paths for each image
   text_files <- image_files |>
     stringr::str_replace(stringr::str_c("\\.", extension, "$"), ".gt.txt")
-  
+
+  # find text files that already exist and ask user whether to overwrite them
+  text_files_extant <- list.files(folder, pattern = paste0("\\.", "gt.txt", "$"), full.names = TRUE)
+
+  text_files_already <- intersect(text_files, text_files_extant)
+
+  if (length(text_files_already) > 0){
+    user_choice <- menu(
+      choices = c("Yes, overwrite them", "No, don't overwrite them"),
+      title = sprintf("Found %s text files already corresponding to images. Do you want to overwrite them?",
+                      length(text_files_already))
+    )
+    if (user_choice != 1){
+      text_files <- setdiff(text_files, text_files_already)
+    }
+  }
+
+  counter_s <- 0
+
   for (i in 1:length(image_files)){
     if (verbose){
       cat("Processing file:", image_files[i], "\n")
