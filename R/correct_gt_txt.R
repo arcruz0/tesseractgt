@@ -1,7 +1,6 @@
 #' Launches the interactive addin to correct "ground truth" .gt.txt files in a folder.
 #'
 #' @export
-source("create_gt_txt.R")
 correct_gt_txt <- function(){
   ui <- miniUI::miniPage(
     shinyjs::useShinyjs(),
