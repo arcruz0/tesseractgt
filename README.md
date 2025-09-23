@@ -3,7 +3,7 @@
 
 In an early stage (v0.0.4). Check out the [blog post with a fully developed example](https://arcruz0.github.io/posts/finetuning-tess/index.html) and the [package documentation](https://arcruz0.github.io/tesseractgt/index.html).
 
-![tesseractgt](https://user-images.githubusercontent.com/28851411/211395669-eee044c2-7da1-4651-828e-5d6863f10133.gif)
+![GIF showing how the `tesseractgt` GUI works](https://user-images.githubusercontent.com/28851411/211395669-eee044c2-7da1-4651-828e-5d6863f10133.gif)
 
 ## Step-by-step summary
 
