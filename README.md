@@ -1,13 +1,13 @@
 `tesseractgt`: Generate Ground Truth Data for Tesseract
 ================
 
-In an early stage (v0.0.4). Check out the [blog post with a fully developed example](https://arcruz0.github.io/posts/finetuning-tess/index.html) and the [package documentation](https://arcruz0.github.io/tesseractgt/index.html).
+In an early stage (v0.0.4). Check out the [guide with a fully developed example](https://andrescruz.org/extra/tesseractgt-guide/) and the [package documentation](https://arcruz0.github.io/tesseractgt/index.html).
 
 ![GIF showing how the `tesseractgt` GUI works](https://user-images.githubusercontent.com/28851411/211395669-eee044c2-7da1-4651-828e-5d6863f10133.gif)
 
 ## Step-by-step summary
 
-(Go to the [blog post](https://arcruz0.github.io/posts/finetuning-tess/index.html) for more detailed explanations of each step.)
+(Go to the [guide](https://andrescruz.org/extra/tesseractgt-guide/) for more detailed explanations of each step.)
 
 0. Install the [Tesseract engine](https://tesseract-ocr.github.io/), [`tesseract`](https://docs.ropensci.org/tesseract/), and `tesseractgt`.
 
